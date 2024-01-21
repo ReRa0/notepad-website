@@ -1,0 +1,147 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181112;
+}
+
+.menu-bar {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 0px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #282828;
+
+    color: white;
+}
+
+#Notepad {
+    margin-left: 10px;
+    font-family: 'caveat';
+    font-size: x-large;
+}
+
+.icon {
+    position: relative;
+    margin-left: 10px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    z-index: 1;
+}
+
+#save, #paste, #file {
+    transition: transform 0.2s;
+}
+
+#save:hover, #paste:hover, #file:hover {
+    transform: scale(1.2);
+}
+.icon:active {
+    
+    color: gray;
+}
+
+#redo, #undo {
+    transition: transform 0.5s;
+}
+
+#undo:hover {
+    transform: rotate( -360deg );
+}
+#redo:hover {
+    transform: rotate( 360deg );
+}
+
+.main-page-button {
+    float: right;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-family: 'caveat';
+    font-size: x-large;
+}
+
+#eyes {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eye {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-eye, .right-eye {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-pupil, #right-pupil {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    transition: transform 0.1s;
+}
+
+.text-bar {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 75%;
+    top: 15%;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 30px;
+    padding-top: 10px;
+}
+
+textarea {
+    width: 98%;
+    height: 98%;
+
+    resize: none;
+    outline: none;
+    border: none;
+
+    font-family: 'caveat';
+    font-size: x-large;
+}
+
+.bottom-bar {
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    bottom: 0px;
+    background-color: #282828;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px -10px 4px 0px rgba(0, 0, 0, 0.25);
+
+    text-indent: 15px;
+    color: white;
+    font-family: 'caveat';
+    font-size: x-large;
+}

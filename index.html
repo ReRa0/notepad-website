@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4476d55df9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text-bar">
+        <textarea id="memo" oninput="updateCursorPosition()"></textarea>
+    </div>
+    
+    <div class="menu-bar">
+        <p id="Notepad">Notepad</p>
+
+        <button class="icon" id="file" type="button"><i class="fa-solid fa-file fa-2xl"></i></button>
+        <button class="icon" id="save" type="button"><i class="fa-solid fa-floppy-disk fa-2xl"></i></button>
+        <button class="icon" id="paste" type="button"><i class="fa-solid fa-paste fa-2xl"></i></button>
+        <button class="icon" id="undo" type="button"><i class="fa-solid fa-rotate-left fa-2xl"></i></button>
+        <button class="icon" id="redo" type="button"><i class="fa-solid fa-rotate-right fa-2xl"></i></button>
+
+        <div id="eyes">
+            <div class="left-eye">
+                <div class="eye" id="left-pupil"></div>
+            </div>
+            <div class="right-eye">
+                <div class="eye" id="right-pupil"></div>
+            </div>
+        </div>
+
+        <button class="main-page-button" type="button">see other tools...</button>
+    </div>
+    
+    <div class="bottom-bar">
+        <p id="cursor-info">
+            Line 1, Column 1
+            Chars 0, Words 1
+        </p>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
